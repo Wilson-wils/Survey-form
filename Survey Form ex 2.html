@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #submit {
+            width: 10%;
+            background-color: green;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+    <header>
+        <h1 id="title">Basic Survey Form</h1>
+        <p id="description">A brief survey to know more about you!</p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name: </label><br>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required><br>
+        <label for="email" id="email-label">Email: </label><br>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required><br>
+        <label for="number" id="number-label">Enter number between 1 and 100: </label><br>
+        <input type="number" name="number" id="number" min="1" max="100" placeholder="Number"><br>
+        
+        <div id="div_1"><br>
+            <label for="dropdown">Select your Home Language:</label><br>
+            <select id="dropdown">
+                <option value="english">English</option>
+                <option value="yoruba">Yoruba</option>
+                <option value="hausa">Hausa</option>
+                <option value="igbo">Igbo</option>
+            </select><br>
+
+            <p>What Car brand do you own?</p>
+            <input type="radio" id="toyota" name="car" value="toyota">
+            <label for="toyota">Toyota</label><br>
+            <input type="radio" id="honda" name="car" value="honda">
+            <label for="honda">Honda</label><br>
+            <input type="radio" id="volkswagen" name="car" value="volkswagen">
+            <label for="volkswagen">Volkswagen</label><br>
+            
+            <p>Describe yourself:</p>
+            <input type="checkbox" id="sleep" name="sleep" value="sleep">
+            <label for="sleep_1">I sleep a lot.</label><br>
+            <input type="checkbox" id="work" name="work" value="work">
+            <label for="work">I work a lot.</label><br>
+            <input type="checkbox" id="play" name="play" value="play">
+            <label for="play">I play a lot.</label><br><br>
+
+            <p>Tell us a story:</p>
+            <textarea name="story" rows="20" cols="50">Once upon a time...
+            </textarea><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</html>
